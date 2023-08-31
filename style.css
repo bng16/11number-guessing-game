@@ -35,7 +35,7 @@ html,body{
 
     color: #000;
 
-    /* display: none; */
+    display: none;
 }
 #hh{
     font-size: 80px;
@@ -61,6 +61,7 @@ html,body{
     display: flex;
     /* justify-content: space-around; */
     align-items: center;
+    justify-content: center;
     gap: 10vw;
 }
 .dis p{
@@ -98,9 +99,23 @@ html,body{
     gap: 10vh;
 
     color: #000;
+
+    display: none;
 }
 .sad-h1-clr{
     color: aliceblue;
+}
+#mid-sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#loose-result{
+    font-size: 30px;
+    font-weight: 600;
+    color: aliceblue;
+
 }
 #play-butt-sad{
     width: 200px;
@@ -116,5 +131,6 @@ html,body{
 }
 #play-butt-sad:hover{
     background-color: rgb(27, 108, 0);
+    border: 1px solid rgb(27, 108, 0);
     color: aliceblue;
 }
