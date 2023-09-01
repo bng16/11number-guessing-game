@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <div id="hero" class="page">
@@ -14,7 +16,9 @@
     <h1 id="hh">Number Guessing Game</h1>
     <div class="dis">
       <img src="asset/hi.gif" alt="">
-      <p>Welcome to the Number Guessing Game!Your mission is to uncover the mysterynumber hidden between 1 and 100. Giveus your best guesses, and we'll giveyou hints if your guess is too high ortoo low. Your challenge is to figure itout using the fewest number ofattempts. Good luck, and let theguessing game begin!</p>
+      <p>Welcome to the Number Guessing Game!Your mission is to uncover the mysterynumber hidden between 1 and 100.
+        Giveus your best guesses, and we'll giveyou hints if your guess is too high ortoo low. Your challenge is to
+        figure itout using the fewest number ofattempts. Good luck, and let theguessing game begin!</p>
       <img src="asset/go-for-it.gif" alt="">
     </div>
     <button id="play-butt">Play</button>
@@ -22,12 +26,28 @@
 
 
   <div id="game" class="page">
-    
+    <h1 id="game-hedding" class="padding">Guess The Number</h1>
+    <h3 id="game-rule" class="padding">Guess a number between 1-100 in 10 attempt.</h3>
+    <form class="padding" id="game-form" action="#">
+      <input id="input" type="text">
+      <input id="submit" type="button" value="Guess">
+    </form>
+    <h4 id="previous-guess" class="padding">Your Previous Guesses are: </h4>
+    <h3 id="attempt-left" class="padding">Attempt left: <span id="attept">10</span> </h5>
   </div>
 
 
   <div id="win" class="page">
+    <div class="dis">
+      <img src="asset/win1.gif" alt="">
+      <div id="mid-sec">
+        <h1 id="hh" class="happy-h1-clr">You Win</h1>
+        <h6 id="win-result">The correct answer is <span id="result">00</span></h6>
+      </div>
+      <img src="asset/win3.gif" alt="">
+    </div>
 
+    <button id="play-butt-happy">Play Again</button>
   </div>
 
 
@@ -41,10 +61,11 @@
       </div>
       <img src="asset/sad2.gif" alt="">
     </div>
-    
-    <button id="play-butt-sad">Play Again</button>
+
+    <button id="play-butt-sad">Try Again</button>
   </div>
 
   <script src="script.js"></script>
 </body>
+
 </html>
